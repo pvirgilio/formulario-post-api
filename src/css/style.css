@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainforms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formNoticia {
+}
+
+.formNoticia input,
+textarea {
+  width: 400px;
+  padding: 15px;
+}
+
+.text-forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.formNoticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnEnviar {
+  width: 100%;
+  padding: 15px;
+  margin-top: 1rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+#consultar {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+#converter {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container-form {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 5rem;
+}
+
+.formNoticia textarea {
+  resize: vertical;
+}
+
+.img-convert {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#inputImage {
+  border: 1px solid #ccc;
+}

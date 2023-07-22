@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+
+    <title>Add Noticia</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="ctn-title">
+        <h1>Enviar notícias</h1>
+      </div>
+      <section class="mainforms">
+        <form
+          class="formNoticia"
+          onsubmit="event.preventDefault(); addNoticias();"
+        >
+          <div class="container-form">
+            <div class="text-forms">
+              <label for="">Título:</label>
+              <input type="text" name="titulo" id="titulo" required />
+
+              <label for="">Descrição:</label>
+              <input type="text" name="descricao" id="descricao" required />
+
+              <label for="">Conteudo:</label>
+              <textarea
+                name="conteudo"
+                id="conteudo"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <div class="img-convert">
+              <label for="">Image (Convert to base64):</label>
+              <input
+                onchange="converterImagem()"
+                type="file"
+                name="image"
+                id="inputImage"
+              />
+              <span id="converter">Converter Imagem</span>
+              <textarea
+                name=""
+                id="text-convert"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <button class="btnEnviar" type="submit">Adicionar notícia</button>
+        </form>
+        <button id="consultar">Ver noticias</button>
+      </section>
+    </main>
+
+    <script src="./src/js/envioNoticia.js"></script>
+  </body>
+</html>
